@@ -1,0 +1,77 @@
+@media (width <= 1000px) {
+
+  #technology {
+    width: 100%;
+    background-color: rgb(186, 166, 161);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #technology .text {
+    padding-left: 25px;
+  }
+
+  #technology h1 {
+    font-size: 3em;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  #technology h2 {
+    margin-top: 15px;
+    margin-bottom: -5px;
+    font-size: 1.5em;
+  }
+
+  #techology h3 {
+    text-align: center;
+  }
+
+.technologyStat {
+  margin-right: 25px;
+}
+
+.technologyStat button{
+  background-color: darkgreen;
+  
+  border: none;
+  color: white;
+  padding: 10px;
+  padding-left: 20px;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.technologyStat div{
+  background-color: rgb(226, 212, 208);
+  
+  padding: 10px;
+}
+
+.technologyStat section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.technologyStat ul{
+  list-style-position: outside;
+  margin-left: -20px;
+}
+
+.technologyStat section ul p{
+  margin-bottom: 10px
+}
+  
+.technologyStat section img {
+  height: 190px;
+  width: 290px;
+  border: 3px solid rgb(51, 35, 30);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React + TypeScript + Replit</title>
+
+    <!-- style sheets for generic parts of website -->
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="../css/Index-wideScreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="../css/Index-smallScreen.css">
+    <!-- style sheet for machine learning interaction -->
+    <link href="../css/mlModel.css" rel="stylesheet" type="text/css" />
+
+    <!-- jsx file for applications using react -->
+    <script type="module" src="src/index.jsx"></script>
+
+    
+    
+  </head>
+  <body>
+    
+    <!-- title -->
+    <div id="title">
+      <div id="text">
+        <h1>Skin Deep</h1>
+        <br>
+        <h4>-Equity in Dermatology-</h4>
+      </div>
+    </div>
+
+    <!-- overview -->
+    <div id="overview">
+      <div id="text">
+        <p>There's a diversity of skin colors, and with a variety of skin colors comes variation in skincare. The susceptibility and appearance of diseases vary between skin types, with the same diseases looking different between skin types. Data and research are plentiful for fairer skin types, but the same can’t be said for darker skin types. This creates gaps in the quality of dermatologic care for people of color, as dermatologists lack the knowledge to help patients with darker skin.
+</p>
+      </div>
+    </div>
+
+    <!-- stats -->
+    <div id="root-FactSlides"></div>
+
+    <!-- technology-->
+    <div id="root-TechnologyStats"></div>
+
+    <!-- focus on skin difference -->
+    <div id="skin-differences">
+      <div id="skin-difference-info" class="info-blurb">
+        <div class="text">
+        <h2>Equitable Representation in the Literature</h2>
+        <p>When textbooks fail to show what conditions look like given different skin tones, they fail to teach dermatologists what to look for when treating people of color.</p>
+        <p>By ensuring that classes and textbooks have equal and diverse representation it gives dermatologists and medical practitioners the knowledge needed to equitably care for all patients.</p>
+      </div>
+      </div>
+      <div id="root-MatchingGame"></div>
+      
+    </div>
+
+    <!-- ml model focus/info -->
+    <div id="ml-info-text" class="info-blurb">
+      <h2>Equitable Representation in the Data</h2>
+      <p>Data may be used to report on current standings, but new technology is also built on data.
+        If new technology is built using biased data, it permeates bias and widens the gap of equity.</p>
+      <p>By ensuring data equity, it guarantees research and technology works equitably for all patients. It also opens opportunities for new research and technology to be more accessible.</p>
+    </div>
+      
+    <!-- ml models exploring representation in data-->
+    <div id="ml-interaction">
+    <h1>Interact with Machine Learning Models</h1>
+    <div id="ml-interaction-blurb">
+      <p>See how representation in data can impact research and technology. Machine Learning models are trained off of datasets, and are therefore susceptible to information bias. When machine learning models are trained off biased datasets or lack diverse data, they reflect that information in their outcomes.</p>
+      <p>Interact with three different Machine Learning models trained with varying levels of data equity. Notice how the data they are trained with affects the conclusions the models draw.</p>
+    </div>
+      
+    <!--See how disparities in representation in samples affects model results -->
+    <div id="ml-model">
+      <div id="ml-model-flex-container">
+
+        <div id="ml-model-info">
+          <div id="model0">
+            <button type="button" id="model0Button" onclick="initializeML(0)">Model 1</button>
+            <section class="piechart"></section>
+          </div>
+          <div id="model1">
+            <button type="button" id="model1Button" onclick="initializeML(1)">Model 2</button>
+            <section class="piechart"></section>
+          </div>
+          <div id="model2">
+            <button type="button" id="model2Button" onclick="initializeML(2)">Model 3</button>
+            <section class="piechart"></section>
+          </div>
+
+          <div id="labels">
+            <p>Test Categories</p>
+            <div id="label1">
+              <span class="color"></span>
+              <p>Fairer Skin</p>
+            </div>
+            <div id="label2">
+              <span class="color"></span>
+              <p>Darker Skin</p>
+            </div>
+            <div id="label3">
+              <span class="color"></span>
+              <p>Not a Person</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="ml-model-interaction">
+          <!--where input will appear-->
+          <div id="webcam-container"></div>
+
+          <!--where predition data will appear-->
+          <div id="label-container"></div>
+  
+          <div id="buttons">
+            <button type="button" onclick="cameraInit()">Use Camera</button>
+            <button type="button" onclick="imageInit()">Use Images</button>
+          </div>
+          
+          <div id="img-container">
+            <button type="button" id="imageRight" onclick="goRight()">&lt;</button>
+             <img id="image1" src="../imgs/ml_experiment_imgs/Person3.jpg" onclick="updateImg()"/>
+             <img id="image2" src="../imgs/ml_experiment_imgs/Person4.jpg" onclick="updateImg()">
+             <img id="image3" src="../imgs/ml_experiment_imgs/Person5.jpg" onclick="updateImg()">
+            <button type="button" id="imageLeft" onclick="goLeft()">></button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- scripts used to run ml model -->
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+      <script src="mlModel.js"></script>
+  </div>
+    </div>
+
+  </body>
+</html>

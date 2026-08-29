@@ -1,0 +1,178 @@
+#ml-interaction {
+  background-color: rgb(51, 35, 30);
+  color: rgb(226, 212, 208);
+
+  width: 100%;
+  
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+#ml-interaction #ml-interaction-blurb {
+  margin: 10px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (width > 1000px) {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+#ml-interaction #ml-interaction-blurb p{
+  margin-bottom: 10px;
+  text-align: left;
+  text-indent: 50px;
+}
+
+#ml-interaction #interact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 37.5%;
+  width: 25%;
+}
+
+#ml-model {
+  display: none;
+}
+
+#ml-model-flex-container {
+  background-color: rgb(51, 35, 30);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+#ml-model-flex-container #ml-model-info {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+#ml-model-flex-container #ml-model-info button {
+  background-color: gray;
+}
+
+#ml-model-info div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content:right;
+  margin-top: 10px;
+}
+
+#ml-model-info button {
+  margin-top: 1.25em;
+  margin-right: 5px;
+  height: 50%;
+}
+
+.piechart {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#model0 .piechart {
+  background-image: conic-gradient(
+      #eed9cd 60deg,
+      #917959 0 240deg,
+      lightblue 0
+  );
+}
+
+#model1 .piechart {
+  background-image: conic-gradient(
+      #eed9cd 180deg,
+      #917959  0 240deg,
+      lightblue 0
+  );
+}
+
+#model2 .piechart {
+  background-image: conic-gradient(
+      #eed9cd 120deg,
+      #917959 0 240deg,
+      lightblue 0
+  );
+}
+
+
+#ml-model-info #labels {
+  display: flex;
+  flex-direction: column;
+}
+
+#labels div {
+  justify-content: left;
+  margin-left: 15px;
+}
+
+#labels .color {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+#label1 .color {
+  background-color: #eed9cd;
+}
+
+#label2 .color {
+  background-color: #917959;
+}
+
+#label3 .color {
+  background-color: lightblue;
+}
+
+
+#ml-model #ml-model-interaction {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 300px;
+}
+
+#webcam-container {
+  height: 200px;
+}
+
+#label-container {
+  padding: 10px;
+  height: 50px;
+}
+
+#img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  height: 75px;
+  margin: 5px;
+}
+
+#ml-model img {
+  width:50px;
+  height:50px;
+  padding:5px;
+  transition-duration: 0.5s;
+}
+
+#ml-model #img-container img:hover {
+  cursor:pointer;
+}
+
+#ml-model #img-container button {
+  height: 50px;
+}

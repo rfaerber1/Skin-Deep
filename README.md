@@ -3,4 +3,4 @@ A react-based web app exploring the state of health equity in dermatology with f
 
 Originally created for the 2024 Kode with Klossy x Deliotte: Health Equity Challenge 
 
-
+View Live Web App: [Skin Deep: Equity in Dermatology](https://skin-deep-lf0y.onrender.com/)
